@@ -23,3 +23,11 @@ vercel        # follow the prompts to deploy (use --prod to deploy to production
 - Or connect this GitHub repository in the Vercel dashboard and enable automatic deployments from the `master` branch.
 
 The repository includes a `vercel.json` that configures a static deployment serving `index.html` at the root.
+
+### Automatic deploys from GitHub (recommended)
+
+1. Go to the Vercel dashboard and import your GitHub repository.
+2. In the project settings, set the `VERCEL_TOKEN` as a GitHub Actions secret named `VERCEL_TOKEN` in this repository (Settings → Secrets → Actions).
+3. The included workflow `.github/workflows/vercel-deploy.yml` will automatically deploy the `master` branch to Vercel on every push.
+
+Alternatively, you can deploy from the CLI as described above.
