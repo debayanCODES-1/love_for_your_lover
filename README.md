@@ -1,9 +1,25 @@
-# 给女朋友的小惊喜
+# A Small Surprise for My Girlfriend
 
-需要修改的部分是index.html文件部分内容。
+The parts that may need modification are some sections of `index.html`.
 
-现已发现日期设置成“喜欢你”当月会出现问题。
+It was discovered that setting the date to the "I love you" month may cause issues.
 
-**我不得不提醒一句，前来fork的哥们儿，这不是我的原创**
+**A quick reminder to anyone forking this: this is not my original work.**
 
-我是在某个纯前端设计网站上面看到的，然后觉得很有意思，就把仓库搞了过来。随机被舍友发现了这个页面，他就拿去用了。本身他女友也挺喜欢的。然而万万没想到的是，她女朋友刷短视频。短视频里面有一个哥们儿对着电脑也在写代码，然后画面呈现的就是这个仓库的页面。奉劝各位，还是不要说是自己原创的，真要被逮住了可麻烦得很。
+I found this on a front-end design website and thought it was interesting, so I copied the project into this repository. A roommate saw the page and used it, and his girlfriend liked it. Unexpectedly, she watched short videos and one showed someone coding at a computer with this page visible. Please do not claim this as your original work — it can cause trouble if discovered.
+
+## Deployment (Vercel)
+
+This is a static site and can be deployed to Vercel easily.
+
+- Deploy with the Vercel CLI:
+
+```bash
+npm install -g vercel
+vercel login
+vercel        # follow the prompts to deploy (use --prod to deploy to production)
+```
+
+- Or connect this GitHub repository in the Vercel dashboard and enable automatic deployments from the `master` branch.
+
+The repository includes a `vercel.json` that configures a static deployment serving `index.html` at the root.

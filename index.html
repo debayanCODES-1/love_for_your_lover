@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>网页标题</title>	    
+        <title>Love Letter</title>	    
         <link type="text/css" rel="stylesheet" href="./file/default.css">
 		<script type="text/javascript" src="./file/jquery.min.js"></script>
 		<script type="text/javascript" src="./file/jscex.min.js"></script>
@@ -16,34 +16,34 @@
 </head>
     <body>
         <div id="main">
-            <div id="error">本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌(<a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>)或者火狐(<a href="http://firefox.com.cn/download/">Firefox</a>)浏览器，或者其他游览器的最新版本。</div>
+            <div id="error">This page uses HTML5 and cannot be displayed in your browser. Please use Google (<a href="https://www.google.com/chrome/">Chrome</a>) or Firefox (<a href="https://www.mozilla.org/firefox/new/">Firefox</a>), or another up-to-date browser.</div>
             <!-- <audio autoplay="autoplay" height="100" width="100"> -->
                     <!-- <source src="renxi.mp3" type="audio/mp3" /> -->
                     <!-- <embed height="100" width="100" src="renxi.mp3" /> -->
             <!-- </audio> -->
             <div id="wrap">
                 <div id="text">
-                    <div id="code"> <font color="#FF0000"> <span class="say">称呼</span><br>
-                      <span class="say">第一行</span><br>
-                      <span class="say">无情的占位符</span><br>
-                      <span class="say">无情的占位符</span><br>             
-                      <span class="say">无情的占位符</span><br>
-                      <span class="say">无情的占位符</span><br>
-                      <span class="say">无情的占位符</span><br>
-                      <span class="say">无情的占位符</span><br>
-                      <span class="say">无情的占位符</span><br>
-                      <span class="say">无情的占位符</span><br>
-                      <span class="say">无情的占位符</span><br>
-                      <span class="say">最后一行</span><br>
-                      <span class="say"><span class="space"></span>--落款</span> </font>
+                                        <div id="code"> <font color="#FF0000"> <span class="say">Name</span><br>
+                                            <span class="say">First line</span><br>
+                                            <span class="say">Placeholder</span><br>
+                                            <span class="say">Placeholder</span><br>             
+                                            <span class="say">Placeholder</span><br>
+                                            <span class="say">Placeholder</span><br>
+                                            <span class="say">Placeholder</span><br>
+                                            <span class="say">Placeholder</span><br>
+                                            <span class="say">Placeholder</span><br>
+                                            <span class="say">Placeholder</span><br>
+                                            <span class="say">Placeholder</span><br>
+                                            <span class="say">Last line</span><br>
+                                            <span class="say"><span class="space"></span>--Signature</span> </font>
                           <br />
                           <br />
                       </p>
                     </div>
                   </div>
                 <div id="clock-box">
-                    <span class="STYLE1"></span><font color="#33CC00">亲爱的，我喜欢你</font>
-<span class="STYLE1">已经是……</span>
+                    <span class="STYLE1"></span><font color="#33CC00">Dear, I love you</font>
+<span class="STYLE1">It's been...</span>
                   <div id="clock"></div>
               </div>
                 <canvas id="canvas" width="1100" height="680"></canvas>
@@ -163,7 +163,7 @@
             foot.draw();
             tree.snapshot("p2", 500, 0, 610, 680);
 
-            // 会有闪烁不得意这样做, (＞﹏＜)
+            // There may be flicker; not ideal but works (＞﹏＜)
             canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
             canvas.css("background", "#ffe");
             $await(Jscex.Async.sleep(300));
@@ -182,11 +182,11 @@
 
         var textAnimate = eval(Jscex.compile("async", function () {
 		    var together = new Date();
-		    together.setFullYear(2019, 11, 2); 			//时间年月日
-		    together.setHours(20);						//小时	
-		    together.setMinutes(0);					//分钟
-		    together.setSeconds(0);					//秒前一位
-		    together.setMilliseconds(2);				//秒第二位
+            together.setFullYear(2019, 11, 2); 			// year, month, day
+            together.setHours(20); 						// hours
+            together.setMinutes(0); 					// minutes
+            together.setSeconds(0); 					// seconds
+            together.setMilliseconds(2); 				// milliseconds
 
 		    $("#code").show().typewriter();
             $("#clock-box").fadeIn(500);
